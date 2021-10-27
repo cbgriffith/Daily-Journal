@@ -1,13 +1,13 @@
-import { EntryListComponent } from "./JournalEntryList.js"
-// import { saveJournal } from "./JournalDataProvider.js"
+import { JournalEntryList } from "./JournalEntryList.js"
+import { saveJournal } from "./JournalDataProvider.js"
 
-const contentTarget = document.querySelector(".journal-form-container")
+const contentTarget = document.querySelector(".journalFormContainer")
 
 contentTarget.addEventListener("click", clickEvent => {
   if (clickEvent.target.id === "saveJournal") {
 
 
-      const newNote = {
+      const newJournalEntry = {
          date: document.querySelector('#journal__Date').value,
          concept: document.querySelector('#journal__Concepts').value,
          entry: document.querySelector('#journal__Entry').value,
@@ -18,8 +18,8 @@ contentTarget.addEventListener("click", clickEvent => {
       document.querySelector('#journal__Entry').value = ""
       document.querySelector('#journal__Mood').value = ""
 
-      saveNote(newNote)
-      .then(EntryListComponent)
+      saveJournal(newJournalEntry)
+      .then(JournalEntryList)
   }
 })
 
