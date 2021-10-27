@@ -1,4 +1,4 @@
-let journal = []
+let journal = [];
 
 // export const useJournalEntries = () => {
 //     const sortedByDate = journal.sort(
@@ -14,19 +14,19 @@ export const useJournalEntries = () => {
 export const getJournalEntries = () => {
     return fetch('http://localhost:8088/entries')
         .then(response => response.json())
-        .then(parsedEntries => {
-            journal = parsedEntries;
+        .then(parsedJournalEntries => {
+            journal = parsedJournalEntries;
         });
 
 }
 
-export const saveJournal = entry => {
+export const saveJournal = newJournalEntry => {
     return fetch('http://localhost:8088/entries', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(entry)
+        body: JSON.stringify(newJournalEntry)
     })
     .then(getJournalEntries)
 }

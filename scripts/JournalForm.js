@@ -36,12 +36,12 @@ export const JournalForm = () => {
           </div>
             <label for="currentMood">Mood for the Day</label>
             <select class="form-select" aria-label="Default select example" id="journal__Mood">
-                <option selected>Happy</option>
-                <option value="sad">Sad</option>
-                <option value="angry">Angry</option>
-                <option value="confused">Confused</option>
-                <option value="exhausted">Exhausted</option>
-                <option value="indifferent">Indifferent</option>
+                <option value="Happy">Happy</option>
+                <option value="Sad">Sad</option>
+                <option value="Angry">Angry</option>
+                <option value="Confused">Confused</option>
+                <option value="Exhausted">Exhausted</option>
+                <option value="Indifferent">Indifferent</option>
               </select>
         <button id="saveJournal" class="btn btn-primary">Save Entry</button>
     </fieldset>

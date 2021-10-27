@@ -1,18 +1,25 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "10/14/2021",
-            "concept": "HTML, CSS, & JavaScript",
-            "entry": "Learned how to use the forEach() in javascript.",
-            "mood": "happy"
-        },
-        {
-            "id": 2,
-            "date": "10/15/2021",
-            "concept": "HTML CSS and JavaScript",
-            "entry": "Learned how to automate HTML through javascript",
-            "mood": "exhausted"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "10/14/2021",
+      "concept": "HTML, CSS, & JavaScript",
+      "entry": "Learned how to use the forEach() in javascript.",
+      "mood": "happy"
+    },
+    {
+      "id": 2,
+      "date": "10/15/2021",
+      "concept": "HTML CSS and JavaScript",
+      "entry": "Learned how to automate HTML through javascript",
+      "mood": "exhausted"
+    },
+    {
+      "date": "2021-10-28",
+      "concept": "JSON fetch and save",
+      "entry": "Got my daily journal to save entries",
+      "mood": "Happy",
+      "id": 3
+    }
+  ]
 }
