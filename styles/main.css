@@ -54,7 +54,7 @@ body {
 	  1000px,
 	  400px 260px;
 	animation: 50s para infinite linear;
-	}
+}
   
   @keyframes para {
 	100% {
@@ -65,6 +65,4 @@ body {
 		1000px 100%,
 		400px 0;
 	  }
-	}
-  
-  
+}
