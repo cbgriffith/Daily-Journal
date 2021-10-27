@@ -9,32 +9,21 @@
 
     <body>
         <header class=logo><img src="./images/dailyjournal.png" alt="logo"></header>
-        <main id="container">
-            <form class="myForm" action="">
-                <fieldset>
-                    <label for="journalDate">Date of Entry</label>
-                    <input type="date" name="journalDate" id="journalDate">
-                    <label for="conceptsCovered">Concepts Covered</label>
-                    <input type="text" name="conceptsCovered" id="conceptsCovered">
-                    <label for="journalEntry">Journal Entry</label>
-                    <textarea id="subject" name="subject" style="height:40px"></textarea>
-                    <label for="currentMood">Mood for the Day</label>
-                        <select name="currentMood" id="currentMood">
-                            <option value="happy">Happy</option>
-                            <option value="sad">Sad</option>
-                            <option value="angry">Angry</option>
-                            <option value="confused">Confused</option>
-                            <option value="exhausted">Exhausted</option>
-                            <option value="indifferent">Indifferent</option>
-                        </select>
-                    <br>
-                    <br>
-                    <input type="submit" value="Record Journal Entry">
-                </fieldset>
-            </form>
+        <main class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="input-group">
+                        <div class="journal-form-container"></div>
+                    </div>
+                </div>
+            </div>
             <div id="entryLog"></div>
+            
+            
         </main>
             <footer class="myFooter"><a href=https://github.com/cbgriffith>Brent Griffith</a> &copy; 2021</footer>
         <script type="module" src="./scripts/main.js"></script>
     </body>
 </html>
+
+

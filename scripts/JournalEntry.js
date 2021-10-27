@@ -1,7 +1,3 @@
-/*
- *  Purpose: To render a single journal entry as an
- *           HTML representation of the data
- */
 export const JournalEntryComponent = (entry) => {
     return `
         <section id="entry--${entry.id}" class="journalEntry">
@@ -12,4 +8,15 @@ export const JournalEntryComponent = (entry) => {
             <hr>
         </section>
     `
+}
+
+
+export const JournalEntry = (entry) => {
+    return `
+        <section id="entry--${entry.id}" class="journal__Card">
+            <p class="journal__Date">${new Date(entry.date).toLocaleDateString('en-US')}</p>
+            <p class="journal__Concepts">Concepts Covered: ${entry.concept}</p>
+            <p class="journal__Entry">Journal Entry: ${entry.entry}</p>
+            <p class="journal__Mood">Mood: ${entry.mood}</p>
+        </section>`
 }
