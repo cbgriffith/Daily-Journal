@@ -36,6 +36,7 @@ export const JournalForm = () => {
           </div>
             <label for="currentMood">Mood for the Day</label>
             <select class="form-select" aria-label="Default select example" id="journal__Mood">
+                <option value=0>Choose a mood</option>
                 <option value="Happy">Happy</option>
                 <option value="Sad">Sad</option>
                 <option value="Angry">Angry</option>
@@ -47,3 +48,17 @@ export const JournalForm = () => {
     </fieldset>
 </form>`
 }
+export const getMood = () => {
+const eventHub = document.querySelector("body")
+let currentMood = ""
+eventHub.addEventListener("change", (eventObject) => {
+
+    if(eventObject.target.id === "journal__Mood"){
+        currentMood = eventObject.target.value
+        console.log("You selected something from the mood dropdown")
+        console.log("This is the crime that was selected: ", currentMood)
+    }
+    return currentMood
+  })
+}
+getMood()
